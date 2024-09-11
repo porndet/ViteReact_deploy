@@ -1,0 +1,35 @@
+ <section
+            className="w-[400px] h-[300px] relative"
+            onMouseEnter={() => handlerMouseEnterActive()}
+            onMouseLeave={() => handlerMouseLeaveActive()}
+          >
+            <img src="/images/app-3.jpg" className="rounded-md"></img>
+            {activeImage === true ? (
+              <div className="*:absolute">
+                <div className="h-full w-full top-0">
+                  <section className="flex flex-col justify-between h-full p-4 bg-black/50 rounded-md">
+                    <section>
+                      <span className="bg-orange-500 py-2 px-2.5 text-white font-bold rounded-md">
+                        App 1
+                      </span>
+                    </section>
+                    <section className="flex justify-center gap-5 text-white text-2xl">
+                      <FontAwesomeIcon
+                        icon="magnifying-glass-plus"
+                        className="cursor-pointer hover:text-orange-500"
+                      ></FontAwesomeIcon>
+                      <FontAwesomeIcon
+                        icon="link"
+                        className="cursor-pointer hover:text-orange-500"
+                      ></FontAwesomeIcon>
+                    </section>
+                    <span className="text-center text-white font-semibold">
+                      Lorem ipsum, dolor sit amet consectetur
+                    </span>
+                  </section>
+                </div>
+              </div>
+            ) : (
+              ''
+            )}
+          </section>
